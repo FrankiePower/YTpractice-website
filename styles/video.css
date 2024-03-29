@@ -1,0 +1,159 @@
+
+
+.piece{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.thumbnail-row{
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.video-time{
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 5px;
+    bottom: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 4px;
+    border-radius: 4px;
+}
+
+
+.vifg{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+}
+
+.channel-picture{
+    width: 40px;
+    vertical-align: top;
+    display: flex;
+    position: relative;
+    
+}
+
+
+
+.bart{
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center; 
+    }
+
+.video-title{
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+.video-author, .video-stats{
+    font-size: 12px;
+    color: rgb(110, 110, 110);
+}
+
+.video-author{
+    margin-bottom: 4px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+@media(max-width: 800px){
+  .video-grid{ grid-template-columns: 1fr 1fr;}
+}
+
+@media(min-width: 800px) and (max-width: 999px){
+  .videogrid{grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+@media(min-width: 1000px){
+  .video-grid{ grid-template-columns: 1fr 1fr 1fr 1fr;}
+}
+
+.video-title-link {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+
+  .profile-picture-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .channel-tooltip {
+    background-color: white;
+    padding: 12px 12px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    width: 200px;
+    position: absolute;
+    top: 45px;
+    z-index: 300;
+  
+    opacity: 0;
+    pointer-events: none;
+  
+    display: flex;    
+    align-items: center;
+    transition: opacity 0.15s;
+  }
+  
+  .profile-picture-container:hover .channel-tooltip {
+    opacity: 1;
+  }
+  
+  .channel-tooltip-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    object-fit: cover;
+    object-position: center; 
+   
+  }
+  
+  .channel-tooltip-name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  
+  .channel-tooltip-stats {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+  }
+
+  .profile-picture{   
+      width: 100%;
+      height: 40px;
+      border-radius: 50px;
+      object-fit: cover;
+      object-position: center; 
+      }
+  
+      .ttp{       
+        display: inline-block;
+        margin-left: 5px;
+      }

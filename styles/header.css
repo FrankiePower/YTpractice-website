@@ -1,0 +1,193 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(220, 220, 220);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding-right: 10px;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    }
+
+    .hamburger-menu{
+        height: 25px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .youtube-logo{
+        height: 20px;
+    }
+
+.middle{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 30px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    flex: 1;
+    width: 0;
+    height: 36px;
+    font-size: 15px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(217, 217, 217);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.04);
+    padding-left: 12px;
+}
+
+.search-icon{
+    height: 25px;
+    margin-top: 4px;
+}
+
+.search::placeholder{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.search-button{
+    height: 39px;
+    width: 66px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(199, 198, 198);
+    border-radius: 2px;
+    background-color: rgb(240, 240, 240);
+    margin-left: -2px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.search-button .tooltip,
+ .voice-search .tooltip,
+ .upload-icon-container .tooltip,
+ .yapps-container .tooltip,
+ .notifs-container .tooltip
+ 
+ {
+position: absolute;
+background-color: gray;
+color: white;
+padding: 4px 8px ;
+border-radius: 2px;
+font-size: 12px;
+bottom: -30px;
+opacity: 0;
+transition: opacity 0.15s;
+pointer-events: none;
+white-space: nowrap;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.search-button:hover .tooltip, 
+.voice-search:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.yapps-container:hover .tooltip,
+.notifs-container:hover .tooltip
+
+{
+    opacity: 1;
+}
+
+
+.voice-search{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.voice-icon{
+    height: 25px;
+    
+}
+
+.right{
+    width: 200px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+   
+    justify-content: space-between;
+    flex-shrink: 0;
+    
+}
+
+.upload{
+    height: 25px;
+    position: relative;  
+
+}
+
+.yapps{
+    height: 25px;
+    position: relative;  
+
+}
+
+.notifs{
+    height: 25px;
+    
+}
+
+.mypp{
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 35px;
+}
+
+.notifications{
+    margin: 0;
+    position: relative;
+}
+
+.c23{
+    background-color: red;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding: 0;
+    border-radius: 20px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    font-size: 10px;
+    padding: 2px 4px;
+    font-weight: bold;
+}
+
+div.right{
+    margin: 0;
+}
+
+.arrange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
